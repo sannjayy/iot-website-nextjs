@@ -24,7 +24,7 @@ export default function Switch({ datas }) {
 
 export const getServerSideProps = async () => {
     // It will request to server every time.
-    const res = await fetch(`https://znas-iot.herokuapp.com/v1/backend/devices/`)
+    const res = await fetch(`http://server.znas.in/iot/api/devices/?key=gMNyF0z_RtfWY5hWoIn4FQ`)
 
     const datas = await res.json()
     return {
