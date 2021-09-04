@@ -16,7 +16,7 @@ export default function SwitchCard({ data }) {
             setPower(0)
         }
         
-        await axios.patch(`http://server.znas.in/iot/api/devices/${id}/?key=gMNyF0z_RtfWY5hWoIn4FQ`, { state: new_state },)
+        await axios.patch(`https://server.znas.in/iot/api/devices/${id}/?key=gMNyF0z_RtfWY5hWoIn4FQ`, { state: new_state },)
     }
 
     return (
