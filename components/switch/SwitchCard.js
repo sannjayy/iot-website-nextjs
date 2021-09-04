@@ -22,7 +22,7 @@ export default function SwitchCard({ data }) {
     return (
         <Link href="/switch">
             <a className={styles.card} onClick={() => clickEvent(data.id, data.state)} >
-                <h3>{data.device_name}</h3>
+                <h3>{data.name}</h3>
                 <p>{power == 1 ? 'Off' : 'On'}</p>
             </a>
         </Link>
